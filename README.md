@@ -54,7 +54,7 @@ Note that you can type command "filebrowser" to open MATLAB file browser if it's
 
 
 
-![alt text](https://raw.githubusercontent.com/CSET-Toolbox/CSET/tree/master/images/Picture1.png)
+![alt text](https://github.com/CSET-Toolbox/CSET/tree/master/images/Picture1.png)
 
 
 
