@@ -1,6 +1,5 @@
-**********************************************************************************************************************************
-------------------------------------SIRT-FISTA-TV Reconstruction Algorithm--------------------------------------------------------
-**********************************************************************************************************************************
+# SIRT-FISTA-TV Reconstruction Algorithm
+
 SIRT-FISTA-TV is a regularized iterative reconstruction algorithm that is very robust to noisy and blurred data and can highly
 reduce missing wedge artifacts. It consists of three steps:
 1) SIRT update (SART and OS-SART could be used also)
@@ -15,36 +14,28 @@ It depends on two toolboxes: ASTRA and Spot.
 
 We provide two examples to test the algorithm: example1.m and example2.m
 
-**********************************************************************************************************************************
------------------------------------------------------Example 1--------------------------------------------------------------------
-**********************************************************************************************************************************
+## Exampel1
 The code named example1.m shows an example of reconstruction from simulated data. This code includes the following steps:
 1. Load a 3D numerical model "3D_model_with_pores_256_256_512_float.raw" from directory "Data"
 2. Generate 2D projections of this 3D model
 3. Perform 3D reconstruction
 4. Save reconstructed volume in directory "Reconstruction_results"
 
-**********************************************************************************************************************************
------------------------------------------------------Example 2--------------------------------------------------------------------
-**********************************************************************************************************************************
+## Example 2
 The code named example2.m shows an example of reconstruction from experimental data. This code includes the following steps:
 1. Load 2D experimental projections "PdSiO2_aligned_tilt_series_1024_1024_69_16int" from directory "Data"
 2. Perform 3D reconstruction
 3. Save reconstructed volume in directory "Reconstruction_results" 
 
 
-**********************************************************************************************************************************
-----------------------------------------------------Directories------------------------------------------------------------------
-**********************************************************************************************************************************
+## Directories
 1. "ASTRA-toolbox": includes ASTRA toolbox
 2. "Spot-toolbox": includes SPOT toolbox
 3. "Data": includes data that we have to reconstruct from
 4. "Reconstruction_results": Reconstruction results are saved here
 5. "TV minimization": includes mex cuda files for TV minimization
 
-**********************************************************************************************************************************
-----------------------------------------------------Installation------------------------------------------------------------------
-**********************************************************************************************************************************
+## Installation
 1. Select "ASTRA-toolbox", "Spot-toolbox", "TV minimization" and "Data" in MATLAB file browser -----> right click -----> Add to
 Path -----> Selected Folders and Subfolders. 
 Note that you can type command "filebrowser" to open MATLAB file browser if it's not the case.
