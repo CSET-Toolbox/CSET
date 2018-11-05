@@ -43,12 +43,18 @@ Note that you can type command "filebrowser" to open MATLAB file browser if it's
 3. Install a C++ compiler (it's recommended to install Visual studio 2013 Community) Link: https://my.visualstudio.com/Downloads?q=visual%20studio%202013&wt.mc_id=o~msft~vscom~older-downloads
 
 
+## Numerical Comparison With Noisy Data
+
+We addded a Gaussian noise of zero mean and sigma = 2% of maximum value in noiseless projections. We show below a horizontal slice of each reconstructed volume (tilting angle range is [-70°,70°]). 
 
 
-![picture1](https://user-images.githubusercontent.com/44570277/48008279-a268a880-e119-11e8-9708-70e091ee7e75.png) ![picture2](https://user-images.githubusercontent.com/44570277/48008456-04291280-e11a-11e8-9a6f-abe32598c3e1.png)
+![picture1](https://user-images.githubusercontent.com/44570277/48008279-a268a880-e119-11e8-9708-70e091ee7e75.png)      ![picture2](https://user-images.githubusercontent.com/44570277/48008456-04291280-e11a-11e8-9a6f-abe32598c3e1.png)      ![picture3](https://user-images.githubusercontent.com/44570277/48008505-228f0e00-e11a-11e8-90e8-f99f6973b736.png)
 
+### <pre>    Original Image                  SIRT                      SIRT-FISTA-TV </pre>
 
+![picture4](https://user-images.githubusercontent.com/44570277/48009042-28d1ba00-e11b-11e8-9413-ed0b82a3d20e.png) ![picture5](https://user-images.githubusercontent.com/44570277/48009078-39823000-e11b-11e8-835b-a0cf59270366.png) ![picture6](https://user-images.githubusercontent.com/44570277/48009106-46068880-e11b-11e8-8dc0-c63455184473.png)
 
+### <pre>SIRT + Median filtering    SIRT + Gaussian Filtering   SIRT + Anisotropic Diffusion Filtering </pre>
 
 
 
