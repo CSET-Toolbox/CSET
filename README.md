@@ -14,7 +14,7 @@ It depends on two toolboxes: ASTRA and Spot.
 
 We provide two examples to test the algorithm: example1.m and example2.m
 
-## Exampele 1
+## Example 1
 The code named example1.m shows an example of reconstruction from simulated data. This code includes the following steps:
 1. Load a 3D numerical model "3D_model_with_pores_256_256_512_float.raw" from directory "Data"
 2. Generate 2D projections of this 3D model
