@@ -12,7 +12,21 @@ It depends on two toolboxes: ASTRA and Spot.
 - The projection and backprojections functions of ASTRA are used.
 - The Spot toolbox is used to provide a MATLAB framework that wraps linear operations into MATLAB objects that act like matrices.
 
-We provide two examples to test the algorithm: example1.m and example2.m
+We provide two examples to test the algorithm: example1.m and example2.m that should run easily after installation is performed correctly.
+
+## Installation
+1. Select "ASTRA-toolbox", "Spot-toolbox", "TV minimization" and "Data" in MATLAB file browser -----> right click -----> Add to
+Path -----> Selected Folders and Subfolders. 
+Note that you can type command "filebrowser" to open MATLAB file browser if it's not the case.
+2. Install CUDA toolkit (version 8.0 works well) Link: https://developer.nvidia.com/cuda-80-ga2-download-archive
+3. Install a C++ compiler (it's recommended to install Visual studio 2013 Community) Link: https://my.visualstudio.com/Downloads?q=visual%20studio%202013&wt.mc_id=o~msft~vscom~older-downloads
+
+## Directories
+1. "ASTRA-toolbox": includes ASTRA toolbox
+2. "Spot-toolbox": includes SPOT toolbox
+3. "Data": includes data that we have to reconstruct from
+4. "Reconstruction_results": Reconstruction results are saved here
+5. "TV minimization": includes mex cuda files for TV minimization
 
 ## Example 1
 The code named example1.m shows an example of reconstruction from simulated data. This code includes the following steps:
@@ -26,21 +40,6 @@ The code named example2.m shows an example of reconstruction from experimental d
 1. Load 2D experimental projections "PdSiO2_aligned_tilt_series_1024_1024_69_16int" from directory "Data"
 2. Perform 3D reconstruction
 3. Save reconstructed volume in directory "Reconstruction_results" 
-
-
-## Directories
-1. "ASTRA-toolbox": includes ASTRA toolbox
-2. "Spot-toolbox": includes SPOT toolbox
-3. "Data": includes data that we have to reconstruct from
-4. "Reconstruction_results": Reconstruction results are saved here
-5. "TV minimization": includes mex cuda files for TV minimization
-
-## Installation
-1. Select "ASTRA-toolbox", "Spot-toolbox", "TV minimization" and "Data" in MATLAB file browser -----> right click -----> Add to
-Path -----> Selected Folders and Subfolders. 
-Note that you can type command "filebrowser" to open MATLAB file browser if it's not the case.
-2. Install CUDA toolkit (version 8.0 works well) Link: https://developer.nvidia.com/cuda-80-ga2-download-archive
-3. Install a C++ compiler (it's recommended to install Visual studio 2013 Community) Link: https://my.visualstudio.com/Downloads?q=visual%20studio%202013&wt.mc_id=o~msft~vscom~older-downloads
 
 
 ## Numerical Comparison With Noisy Data
