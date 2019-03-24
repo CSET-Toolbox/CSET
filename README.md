@@ -55,7 +55,10 @@ We addded a Gaussian noise of zero mean and sigma = 2% of maximum value in noise
 
 ### <pre>SIRT + Median filtering    SIRT + Gaussian Filtering   SIRT + Anisotropic Diffusion Filtering </pre>
 
+# Referencing CS-ET
 
+If you use CS-ET in any publications, please cite the following paper:
 
+Banjak, H., Grenier, T., Epicier, T., Koneti, S., Roiban, L., Gay, A. S. & Maxim, V. (2018). Evaluation of noise and blur effects with SIRT-FISTA-TV reconstruction algorithm: Application to fast environmental transmission electron tomography. Ultramicroscopy, 189, 109-123.
 
 
