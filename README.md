@@ -56,16 +56,6 @@ We addded a Gaussian noise of zero mean and sigma = 2% of maximum value in noise
 ### <pre>SIRT + Median filtering    SIRT + Gaussian Filtering   SIRT + Anisotropic Diffusion Filtering </pre>
 
 
-## Experimental Results
-
-![picture7](https://user-images.githubusercontent.com/44570277/48009624-6125c800-e11c-11e8-87e4-12f6df4a721d.png)
-## <pre>                               ART    </pre>
-
-![picture8](https://user-images.githubusercontent.com/44570277/48009653-697e0300-e11c-11e8-95bc-860f7ffb0e5c.png)
-
-## <pre>                          SIRT-FISTA-TV    </pre>
-
-
 
 
 
